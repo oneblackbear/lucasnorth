@@ -1,0 +1,273 @@
+*{
+	font-family:georgia, times, serif;	
+	text-align:left;
+}
+html{
+	background:#666666;
+}
+/* main tags */
+p, ul, ol {
+  font-size:1em;
+}
+p{
+	margin:10px;
+	width:550px;
+	color:#fff;
+	line-height:1.4em;
+	font-size:2.1em;
+}
+small{font-size:52%;}
+#webpagecontact p{
+	margin-top:0;
+}
+#webpageabout p{
+	font-size:1.6em;
+	margin:15px 10px;
+}
+li{
+	margin:5px 15px;
+	list-style:none;
+	list-style-position:outside;
+}
+ul.nojs{margin:10px 0;}
+ul.nojs li{
+	margin:10px 15px;
+	list-style:square;
+	list-style-position:outside;	
+}
+ol li{
+	list-style:decimal;
+	margin:10px 40px;
+}
+.gallery_unstyled li{
+	margin:0;
+}
+a,ul.subnavigation .selected li a {
+	color: #999999;
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+img {
+  border:0;
+}
+strong{font-weight:bold;}
+em{font-style:italic;}
+h1{
+	color:#000;
+	font-size:2.3em;
+	margin:0 0 5px 0;
+}
+h1 a{color:#000;}
+h2,h3,h4{
+	color:#999999;
+	font-size:2.2em;
+}
+h3{font-size:1.9em;}
+h4{font-size:1.7em;}
+
+/* styles */
+#container{
+	width:800px;
+	margin:0px auto;
+}
+
+#container #secondary_column{
+	width:190px;
+	float:right;
+	margin:20px 0 10px 0;
+}
+#container #primary_column{
+	width:600px;
+	float:left;
+	margin:25px 0 10px 0;	
+}
+#webpagecontact #container #primary_column{margin-top:20px;}
+
+.subnavigation{
+	display:none;
+}
+
+#webpagegallery ul.subnavigation{
+	display:block;
+	margin:30px 0 0 0;
+}
+#webpagegallery #galleries_link a,
+#webpageabout #about_link a,
+#webpagecontact #contact_link a,
+ul.subnavigation .selected a,
+ul.subnavigation .selected li.selected a
+{color:#fff;}
+
+#navigation li, .subnavigation li{
+	font-size:2.0em;
+	margin:5px;
+}
+.subnavigation li{
+	font-size:1.6em;
+}
+.subnavigation li.subfolder{
+	font-size:93%;
+	margin-left:20px;
+} 
+ul#navigation{
+	margin:20px 0 0 0;
+}
+
+#featured_image_text h3{
+	margin:10px;
+}
+/* gallery */
+.galleria{
+	list-style:none;
+}
+.galleria li{
+	display:block;
+	width:80px;
+	height:80px;
+	overflow:hidden;
+	float:left;
+	margin:0 10px 10px 0;
+}
+.galleria li a{
+	display:none;
+}
+.galleria li div{
+	position:absolute;
+	display:none;
+	top:0;
+	left:180px;
+}
+.galleria li div img{cursor:pointer;}
+.galleria li.active div img,.galleria li.active div{display:block;}
+.galleria li img.thumb{
+	cursor:pointer;
+	top:auto;
+	left:auto;
+	display:block;
+	width:auto;
+	height:auto;
+}
+
+* html .galleria li div span{width:400px} /* MSIE bug */
+ul.gallery{
+	margin:0;
+	width:98%;
+}
+.gallery li, .gallery_unstyled li{
+	width:32px;
+	height:27px;
+	border:3px double #111;
+	margin:2px;
+	background: #000;
+}
+ul.gallery li img{
+	width:auto;
+	height:auto;
+}
+.gallery_unstyled li{
+	float:left;
+}
+.gallery_unstyled li img{
+	height:25px;
+	width:28px;
+}
+
+#main_image{
+	margin:0 auto 0px 0;
+	overflow:hidden;
+	height:500px;
+	background: transparent url('/layout_images/loader.gif') no-repeat center center;
+}
+
+.caption{
+	margin:30px 0 0 0;
+	padding:5px;
+	color:#999999;
+	font-size:1.3em;
+	font-style:italic;
+	border:1px solid #999;
+}
+
+.nav{
+	clear:both;
+	font-size:80%;
+	letter-spacing:3px;
+	text-transform:uppercase;
+	margin:10px 0;
+	float:left;
+}
+
+.info{
+	text-align:left;
+	width:550px;
+	margin:30px auto;
+	border-top:1px dotted #221;
+	padding-top:30px;
+}
+.info p{margin-top:1.6em;}
+span.error{display:none;}
+/* hide the hcard footer */
+#hcard-Lucas-North{display:none;}
+
+#gallery_details{
+	margin-top:15px;
+	width:98%;
+	float:left;
+}
+#footer{
+	border-top:1px dotted #221;
+	margin:15px auto;
+	width:800px;
+}
+#footer p{
+	font-size:1em;
+	width:400px;
+	float:left;
+}
+p#oneblackbear{
+	float:right;
+	width:auto;
+	color:#000;
+}
+p#oneblackbear a{
+	color:#000;
+	border-bottom:1px dashed #000;
+}
+form{
+	margin:10px;
+}
+form label{
+	width:115px;
+	color:#fff;
+	font-size:1.3em;
+	float:left;
+	margin:8px 5px;
+}
+form .form_item, form .form_submit{
+	float:left;
+	margin:8px 5px;
+	padding:3px 1px;
+}
+form .form_item{
+	width:200px;
+}
+form .form_submit{
+	margin-left:128px;
+}
+
+
+/* Nasty clearfix hacks */
+.clearfix {display:inline-block;} 
+/* Hide from IE Mac \*/ 
+.clearfix {display:block;} 
+/* End hide from IE Mac */ 
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
